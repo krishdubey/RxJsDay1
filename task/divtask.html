@@ -1,0 +1,103 @@
+<html>
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        </head>
+    <body>
+<style>
+        .container {
+            overflow:auto;
+        }
+        .s1 {
+            float:left; 
+            width:100px; 
+            height:100px; 
+            border-style:solid; 
+            margin:5px;
+            background-color : royalblue;
+            position: relative;
+        }
+        .s2
+        {
+            float:left; 
+            width:100px; 
+            height:100px; 
+            border-style:solid; 
+            margin:5px;
+            background-color : yellow;
+            position: relative;
+        }
+        .s3
+        {
+            float:left; 
+            width:100px; 
+            height:100px; 
+            border-style:solid; 
+            margin:5px;
+            background-color :yellowgreen;
+            position: relative;
+        }
+        .s4
+        {
+            float:left; 
+            width:100px; 
+            height:100px; 
+            border-style:solid; 
+            margin:5px;
+            background-color :red;
+            position: relative;
+        }
+      
+        </style>
+        
+        <div class="container">
+            <span class="s1">div1</span>
+            <span class="s2">div2</span>
+            <span class="s3">div3</span>
+            <span class="s4">div4</span>
+         
+        </div>
+        <script>
+                $(document).ready(function()
+                {
+                    $(".s4").click(function()
+                    {
+                    $(".s3").animate({
+                        left: '110px',
+
+                    });
+                    $(".s2").animate({
+                        left:'110px',
+                    });
+                    $(".s1").animate({
+                        left:'110px',
+                    });
+                    $(".s4").hide()
+                    });
+                });
+                $(document).ready(function()
+                {
+                    $(".s3").click(function()
+                    {
+                    $(".s2").animate({
+                        left: '210px',
+                    });
+                    $(".s1").animate({
+                        left: '210px',
+                    });
+                    $(".s3").hide()
+                    });
+                });
+                $(document).ready(function()
+                {
+                    $(".s2").click(function()
+                    {
+                    $(".s1").animate({
+                        left: '340px',
+                    });
+                    $(".s2").hide()
+                    });
+                });
+               </script>
+    </body>
+        </html>

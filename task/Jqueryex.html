@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   
+</head>
+<body>
+    <script>
+            $(document).ready(function () {
+                $("#imgs").click(function ()
+                {
+                        $("#imgs").animate(
+                                {
+                                    left: '250px',
+                                    height: '250px',
+                                    width: '250px'
+                        });
+                    $("#imgs").click(function () {
+                        $("#imgs").animate(
+                            {
+                                left:'-00',
+                                height: '20px',
+                                width: '20px'
+                            });
+                    });
+                    });
+                });
+    </script>
+    <style>
+        #imgs {
+            position: absolute;
+        }
+    </style>                                 
+    <img id="imgs" src="img100.jpg" height="20px" width="20px" />
+                                  
+</body>
+</html>
+
